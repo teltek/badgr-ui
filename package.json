@@ -1,6 +1,6 @@
 {
   "name": "badgr-ui",
-  "version": "v2.15.5",
+  "version": "v2.15.5-fix-packages",
   "description": "Badgr UI",
   "scripts": {
     "test": "npm run test:ci",

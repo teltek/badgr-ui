@@ -1,0 +1,126 @@
+
+
+<!doctype html>
+<html lang="en">
+
+    <head>
+      <meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<title>Badgr Pattern Library</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+<style type="text/css">
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+</style>
+
+<link rel="stylesheet" href="../../theme-default.css?v&#x3D;0.0.3">
+
+<script type="text/javascript" src="../../js/dialog-pollyfill.js"></script>
+<script type="text/javascript" src="../../js/dialog-setup.js"></script>
+    </head>
+
+    <body>
+
+      <div>
+          <div class="showmore showmore-is-open">
+	<div class="showmore-x-container">
+			Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Cras ultricies ligula sed magna dictum porta.
+			 Curabitur aliquet quam id dui posuere blandit. Proin eget tortor risus. Praesent sapien massa, convallis a pellentesque
+			nec, egestas non nisi. Sed porttitor lectus nibh. Proin eget tortor risus. Vestibulum ac diam sit amet quam vehicula
+			elementum sed sit amet dui. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Pellentesque in ipsum id
+			orci porta dapibus.
+		<br><br>
+			Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Vestibulum ante ipsum primis in faucibus orci luctus
+			et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Pellentesque
+			in ipsum id orci porta dapibus. Proin eget tortor risus. Proin eget tortor risus. Quisque velit nisi, pretium ut lacinia
+			in, elementum id enim. Cras ultricies ligula sed magna dictum porta. Praesent sapien massa, convallis a pellentesque nec,
+			egestas non nisi. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Curabitur non nulla sit amet nisl
+			tempus convallis quis ac lectus.
+		<br><br>
+			Nulla quis lorem ut libero malesuada feugiat. Donec sollicitudin molestie malesuada. Curabitur arcu erat, accumsan
+			id imperdiet et, porttitor at sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ultricies ligula sed
+			magna dictum porta. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Vestibulum ante ipsum primis in
+			faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit
+			amet ligula. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Vivamus magna justo, lacinia eget
+			consectetur sed, convallis at tellus. Donec sollicitudin molestie malesuada.
+	</div>
+	<button class="showmore-x-button">
+		<span>Show More</span>
+	</button>
+</div>
+
+
+<!-- NOTE: THe following javascript is for styleguide functionality only.-->
+<script type="text/javascript">
+  if(!document.querySelector(".showmore")
+		  .classList.contains("showmore-is-open")
+  ){
+	  document.querySelector(".showmore-x-container")
+		  .style.height = "50px";
+  }
+</script>
+
+      </div>
+
+      <script type="text/javascript">
+  var event = new CustomEvent(
+    'styleguide:onRendered', {
+      bubbles: true,
+      cancelable: true
+    }
+  );
+
+  window.dispatchEvent(event);
+</script>
+
+    </body>
+
+</html>

@@ -1,0 +1,277 @@
+
+
+<header class="wrap wrap-light l-containerhorizontal l-heading ">
+
+	<nav>
+		<h2 class="visuallyhidden">Breadcrumbs</h2>
+		<ul class="breadcrumb">
+	<li><a href="">Top Level</a></li>
+	<li><a href="">Child Level</a></li>
+	<li><a href="" class="breadcrumb-x-current">Child Level</a></li>
+</ul>
+	</nav>
+
+	<header class="heading">
+	<div class="heading-x-text">
+		<h1 id="heading" id="heading-addbadgeclass">Add Badge Class</h1>		
+	</div></header>
+
+</header>
+
+<form class="l-containerhorizontal l-containervertical">
+		<div class="l-formsection wrap wrap-well" role="group" aria-labelledby="heading-basicinformation">
+  <h3 class="l-formsection-x-legend title title-ruled" id="heading-basicinformation">Basic Information</h3>
+  <div class="l-formsection-x-container">
+      <div class="l-formsection-x-help">
+        <h4 class="title title-bordered" id="heading-badgebasics">Badge Basics</h4>
+        <p class="text text-small">Badge images can be either PNGs or SVGs. <strong>All fields are required.</strong></p>
+        <button
+	class="button button-tertiaryghost"
+	
+	type="button"
+	aria-labelledby="heading-badgebasics">Learn More</button>
+      </div>
+    <div class="l-formsection-x-inputs">
+        <div class="l-formimageupload">
+  <div class="l-formimageupload-x-upload formfield formfield-inlinelabel">
+  <label class=" " for="formfield">Image<span>(<button type="button">generate random<span class="visuallyhidden"> badge image</span></button>)</span></label>
+    <div class="l-dropzoneinput">
+  <div class="l-dropzoneinput-x-container">
+    <input class="visuallyhidden" type="file" name="dropzone" id="dropzone">
+    <label class="dropzone dropzone-alt1"  aria-labelledby="dropzone">
+    <span class="dropzone-x-text">Upload Image</span>
+</label>
+    <label
+	class="button button-tertiary"
+	
+	
+	aria-labelledby="dropzone">Browse</label>
+  </div>
+</div>
+</div>
+  <div class="l-formimageupload-x-inputs">
+    <div class="formfield">
+  <label class=" " for="badgename">Name</label>
+    <input id="badgename" name="badgename" type="text"    >
+</div>
+    <div class="formfield">
+  <label class=" " for="badgedescription">Short Description</label>
+		<textarea id="badgedescription" name="badgedescription"  ></textarea>
+</div>
+  </div>
+</div>
+    </div>
+  </div>
+  
+</div>
+		<div class="l-formsection wrap wrap-well" role="group" aria-labelledby="heading-criteria">
+  <h3 class="l-formsection-x-legend title title-ruled" id="heading-criteria">Criteria</h3>
+  <div class="l-formsection-x-container">
+      <div class="l-formsection-x-help">
+        <h4 class="title title-bordered" id="heading-whatscriteria">What's Criteria?</h4>
+        <p class="text text-small">Critera describes exactly what must be done to earn this badge. Some issuers choose a URL on their website as a promotional page that explains this badge opportunity and how to earn it. <strong>At least one field is required.</strong></p>
+        <button
+	class="button button-tertiaryghost"
+	
+	type="button"
+	aria-labelledby="heading-whatscriteria">Learn More</button>
+      </div>
+    <div class="l-formsection-x-inputs">
+        <div class="l-formsection-x-inputoffset markdowneditor">
+		<div class="markdowneditor-x-editor">
+			<div class="formfield">
+  <label class=" " for="markdowntext">How is this Badge Earned?</label>
+		<textarea id="markdowntext" name="markdowntext"  ></textarea>
+</div>
+		</div>
+		<div class="markdowneditor-x-tabbar">
+			<div class="markdowneditor-x-tab markdowneditor-x-writebutton">write</div>
+			<div class="markdowneditor-x-tab markdowneditor-x-previewbutton">preview</div>
+			<span><button class="trigger">Markdown Supported</button></span>
+		</div>
+</div>
+
+
+<!-- NOTE: THe following javascript is for styleguide functionality only.-->
+<script type="text/javascript">
+	if(!document.querySelector(".markdowneditor")
+			.classList.contains("markdowneditor-x-preview")
+	){
+		document.querySelector(".tooltip")
+			.classList.add("tooltip-is-active")
+	}
+</script>
+
+
+<!-- NOTE: THe following javascript is for styleguide functionality only. -->
+<script type="text/javascript">
+	var isOpen = false;
+	var markdowneditorContainer = document.getElementsByClassName("markdowneditor")[0];
+	var btn = markdowneditorContainer.getElementsByClassName("trigger")[0];
+
+	close();
+
+	btn.addEventListener("click",function(){
+		isOpen = !isOpen;
+		toggleOpen();
+	})
+
+	function toggleOpen(){
+		isOpen ?  open() : close();
+	}
+
+	function open(){
+		markdowneditorContainer.getElementsByClassName("tooltip")[0]
+			.classList.add("tooltip-is-active");
+	}
+
+	function close(){
+		markdowneditorContainer.getElementsByClassName("tooltip")[0]
+			.classList.remove("tooltip-is-active");
+	}
+</script>
+        <div class="formfield">
+  <label class=" " for="criteria-url">URL to the Badge Criteria Page</label>
+    <input id="criteria-url" name="criteria-url" type="text"    >
+</div>
+    </div>
+  </div>
+  
+</div>
+		<div class="l-formsection wrap wrap-well" role="group" aria-labelledby="heading-alignment">
+  <h3 class="l-formsection-x-legend title title-ruled" id="heading-alignment">Alignment <span>(optional)</span></h3>
+  <div class="l-formsection-x-container">
+      <div class="l-formsection-x-help">
+        <h4 class="title title-bordered" id="heading-whatsalignment">What's Alignment?</h4>
+        <p class="text text-small">An Open Badge can optionally align to an educational standard. Alignment information may be relevant to people viewing an earner's awarded badges, or to a potential earner deciding whether to apply for the badge.</p>
+        <button
+	class="button button-tertiaryghost"
+	
+	type="button"
+	aria-labelledby="heading-whatsalignment">Learn More</button>
+      </div>
+    <div class="l-formsection-x-inputs">
+        <div class="l-formsectionnested wrap wrap-welldark">
+  <h5 class="visuallyhidden" id="heading-alignmentsubsection">Alignment 1</h5>
+    <div class="formfield">
+  <label class=" " for="alignmentname">Name</label>
+    <input id="alignmentname" name="alignmentname" type="text"    >
+</div>
+    <div class="formfield">
+  <label class=" " for="alignmenturl">URL</label>
+    <input id="alignmenturl" name="alignmenturl" type="text"    >
+</div>
+    <div class="formfield">
+  <label class=" " for="alignmentdescription">Short Description</label>
+		<textarea id="alignmentdescription" name="alignmentdescription"  ></textarea>
+</div>
+    <div class="l-formsectiontoggle">
+  <input class="l-formsectiontoggle-x-toggle formsectiontoggle visuallyhidden" type="checkbox" id="formsectiontoggle" name="formsectiontoggle">
+<label class="standaloneanchor" for="formsectiontoggle">
+  <span class="formsectiontoggle-x-showtext">Show</span><span class="formsectiontoggle-x-hidetext">Hide</span> Advanced Options
+</label>
+  <div class="l-formsectiontoggle-x-hidden">
+      <div class="formfield">
+  <label class=" " for="aignmentframework">Framework</label>
+    <input id="aignmentframework" name="aignmentframework" type="text"    >
+</div>
+      <div class="formfield">
+  <label class=" " for="aignmentcode">Code</label>
+    <input id="alignmentcode" name="alignmentcode" type="text"    >
+</div>
+  </div>
+</div>
+  <button class="l-formsectionnested-x-remove formsectionremove" aria-labelledby="heading-alignmentsubsection">Remove</button>
+</div>
+        <button class="buttonicon buttonicon-add" type="button" >Add Another</button>
+    </div>
+  </div>
+  <button class="l-formsection-x-remove formsectionremove" aria-labelledby="heading-alignment">Remove</button>
+</div>
+		<div class="l-formsection wrap wrap-well" role="group" aria-labelledby="heading-tags">
+  <h3 class="l-formsection-x-legend title title-ruled" id="heading-tags">Tags</h3>
+  <div class="l-formsection-x-container">
+      <div class="l-formsection-x-help">
+        <h4 class="title title-bordered" id="heading-whataretags">What are Tags?</h4>
+        <p class="text text-small">Tags are optional ways to describe a type of achievement. When you use tags, you help people who are interested in your topic find your Badge.</p>
+        <button
+	class="button button-tertiaryghost"
+	
+	type="button"
+	aria-labelledby="heading-whataretags">Learn More</button>
+      </div>
+    <div class="l-formsection-x-inputs">
+        <ul class="l-tags">
+    <li>
+      <div class="tag">
+  <span class="tag-x-text">Science</span>
+  <button type="button">Remove Science tag</button>
+</div>
+    </li>
+    <li>
+      <div class="tag">
+  <span class="tag-x-text">Technology</span>
+  <button type="button">Remove Technology tag</button>
+</div>
+    </li>
+    <li>
+      <div class="tag">
+  <span class="tag-x-text">Research</span>
+  <button type="button">Remove Research tag</button>
+</div>
+    </li>
+    <li>
+      <div class="tag">
+  <span class="tag-x-text">Programming</span>
+  <button type="button">Remove Programming tag</button>
+</div>
+    </li>
+    <li>
+      <div class="tag">
+  <span class="tag-x-text">Data Visualization</span>
+  <button type="button">Remove Data Visualization tag</button>
+</div>
+    </li>
+</ul>
+        <div class="l-formsection-x-maxwidthinput formfield">
+  <label class=" " for="formfield">Add a Tag</label>
+    <div class="formaddinput">
+  <label class="visuallyhidden" for="addtag" id="formaddinput-addtag">Tag</label>
+  <input type="text" name="addtag" id="addtag">
+  <button aria-labelledby="formaddinput-addtag">Add</button>
+</div>
+</div>
+    </div>
+  </div>
+  <button class="l-formsection-x-remove formsectionremove" aria-labelledby="heading-tags">Remove</button>
+</div>
+		<div class="l-formsection l-formsection-span wrap wrap-well" role="group" aria-labelledby="heading-addoptionaldetails">
+  <h3 class="l-formsection-x-legend title title-ruled title-ruledadd" id="heading-addoptionaldetails">Add Optional Details</h3>
+  <div class="l-formsection-x-container">
+    <div class="l-formsection-x-inputs">
+        <div class="l-squareiconcards">
+    <button class="squareiconcard squareiconcard-alignment" type="button" disabled>
+  <span class="squareiconcard-x-container">Alignment</span>
+</button>
+    <button class="squareiconcard squareiconcard-tags" type="button" disabled>
+  <span class="squareiconcard-x-container">Tags</span>
+</button>
+</div>
+    </div>
+  </div>
+  
+</div>
+	<hr class="rule l-rule">
+	<div class="l-childrenhorizontal l-childrenhorizontal l-childrenhorizontal-right">
+		<button
+	class="button button-secondary"
+	
+	type="button"
+	>Cancel</button>
+		<button
+	class="button"
+	
+	type="submit"
+	>Create Badge</button>
+	</div>
+</form>

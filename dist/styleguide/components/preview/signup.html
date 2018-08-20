@@ -1,0 +1,170 @@
+
+
+<!doctype html>
+<html lang="en">
+
+    <head>
+      <meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<title>Badgr Pattern Library</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+<style type="text/css">
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+</style>
+
+<link rel="stylesheet" href="../../theme-default.css?v&#x3D;0.0.3">
+
+<script type="text/javascript" src="../../js/dialog-pollyfill.js"></script>
+<script type="text/javascript" src="../../js/dialog-setup.js"></script>
+    </head>
+
+    <body>
+
+      <app>
+
+        <header class="header l-containerhorizontal">
+	<a href="#">
+		<picture>
+			<source media="(min-width: 640px)" srcset="http://placehold.it/122x49">
+			<img src="http://placehold.it/45/49" alt="Badgr logo">
+		</picture>
+	</a>
+	<a class="header-x-menu" href="#navigation">Main Navigation</a>
+</header>
+
+
+        <main>
+          <div class="l-auth">
+  <h3 class="l-auth-x-title title title-bold" id="heading-form">Sign Up</h3>
+  <p class="l-auth-x-text text text-quiet">Already have an account? <a href="#">Log In</a>.</p>
+  <form class="l-form l-form-span " role="form" aria-labelledby="heading-form">
+    <fieldset role="group" aria-labelledby="heading-socialsignup">
+      <legend class="visuallyhidden" id="heading-socialsignup">Sign up with third-party social account</legend>
+      <div class="formfield">
+  <p class="formfield-x-label " >Sign In With</p>
+    <div class="l-authbuttons">
+  <div><button class="buttonauth buttonauth-facebook" type="button">Facebook</button></div>
+  <div><button class="buttonauth buttonauth-kony" type="button">Kony</button></div>
+  <div><button class="buttonauth buttonauth-linkedin_oauth2" type="button">LinkedIn</button></div>
+  <div><button class="buttonauth buttonauth-google" type="button">Google</button></div>
+  <div><button class="buttonauth buttonauth-microsoft" type="button">Microsoft</button></div>
+</div>
+</div>
+    </fieldset>
+    <div class="formdivider">
+	<span>Or</span>
+</div>
+    <fieldset role="group" aria-labelledby="heading-badgrsignup">
+      <legend class="visuallyhidden" id="heading-badgrsignup">Sign up for a Badgr account</legend>
+      <div class="formfield">
+  <label class=" " for="email">Email</label>
+    <input id="email" name="email" type="email"    >
+</div>
+    </fieldset>
+    <div class="l-form-x-offset l-childrenhorizontal l-childrenhorizontal l-childrenhorizontal-right">
+      <button
+	class="button"
+	
+	type="submit"
+	>Sign Up</button>
+    </div>
+  </form>
+</div>
+
+        </main>
+
+        <footer class="wrap l-containerhorizontal">
+          <div class="footer">
+	<ul>
+		<li>Copyright &copy; 2016 <a href="http://concentricsky.com" target="_blank">Concentric Sky, Inc.</a></li>
+		<li>Powered by <a href="" target="_blank">Badgr</a></li>
+	</ul>
+	<a href="" target="_blank">API documentation</a>
+</div>
+        </footer>
+
+        <nav class="menu" id="menu">
+
+	<h1 class="visuallyhidden">Main Navigation</h1>
+
+	<ul>
+			<li class="menuitem menuitem-is-active"><a href="#">Backpack</a></li>
+			<li class="menuitem"><a href="#">Collections</a></li>
+			<li class="menuitem"><a href="#">Issuers</a></li>
+		<li class="menuitem">
+			<button onclick="this.parentElement.classList.toggle('menuitem-is-open')">Account</button>
+			<ul>
+					<li class="menuitem menuitem-secondary"><a href="#">Profile</a></li>
+					<li class="menuitem menuitem-secondary"><a href="#">App Integrations</a></li>
+					<li class="menuitem menuitem-secondary"><a href="#">Sign Out</a></li>
+			</ul>
+		</li>
+	</ul>
+
+</nav>
+
+      </app>
+
+      <script type="text/javascript">
+  var event = new CustomEvent(
+    'styleguide:onRendered', {
+      bubbles: true,
+      cancelable: true
+    }
+  );
+
+  window.dispatchEvent(event);
+</script>
+
+    </body>
+
+</html>

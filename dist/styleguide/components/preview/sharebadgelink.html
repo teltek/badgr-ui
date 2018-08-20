@@ -1,0 +1,200 @@
+
+
+<!doctype html>
+<html lang="en">
+
+    <head>
+      <meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<title>Badgr Pattern Library</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+<style type="text/css">
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+</style>
+
+<link rel="stylesheet" href="../../theme-default.css?v&#x3D;0.0.3">
+
+<script type="text/javascript" src="../../js/dialog-pollyfill.js"></script>
+<script type="text/javascript" src="../../js/dialog-setup.js"></script>
+    </head>
+
+    <body>
+
+      <app>
+
+        <header class="header l-containerhorizontal">
+	<a href="#">
+		<picture>
+			<source media="(min-width: 640px)" srcset="http://placehold.it/122x49">
+			<img src="http://placehold.it/45/49" alt="Badgr logo">
+		</picture>
+	</a>
+	<a class="header-x-menu" href="#navigation">Main Navigation</a>
+</header>
+
+
+        <main>
+          <dialog class="dialog dialog-titled wrap wrap-light">
+  <header class="dialog-x-titlebar">
+		<h1>Share this Badge</h1>
+		<button class="dialog-x-close"><span class="icon icon-notext icon-close">Close</span></button>
+	</header>
+	<nav class="l-tabs" aria-labelledby="nav-tabs" role="navigation">
+  <h3 class="visuallyhidden" id="nav-tabs"> Tabs</h3>
+    <button class="tab tab-is-active" type="button" >
+  <span class="visuallyhidden">Open </span>Link<span class="visuallyhidden"> tab</span>
+</button>
+    <button class="tab" type="button" >
+  <span class="visuallyhidden">Open </span>Social<span class="visuallyhidden"> tab</span>
+</button>
+    <button class="tab" type="button" >
+  <span class="visuallyhidden">Open </span>Embed<span class="visuallyhidden"> tab</span>
+</button>
+</nav>
+  <div class="l-sharepane" tabindex="-1" id="sharelink">
+    <div class="formfield formfield-link">
+  <label class=" " for="copy">Copy this private URL to share:</label>
+    <input id="copy" name="copy" type="text"   value="https://api.badgr.io" readonly>
+</div>
+    <div class="l-childrenhorizontal l-childrenhorizontal l-childrenhorizontal-spacebetween">
+      <div class="l-childrenhorizontal l-childrenhorizontal l-childrenhorizontal-small">
+        <div class="formradiobutton">
+	<input type="radio" value="version1" name="version" id="version1" checked >
+	<label for="version1">
+		<span><span></span></span>
+		<span class="formradiobutton-x-text">v1.0</span>
+	</label>
+</div>
+        <div class="formradiobutton">
+	<input type="radio" value="version2" name="version" id="version2"  >
+	<label for="version2">
+		<span><span></span></span>
+		<span class="formradiobutton-x-text">v2.0</span>
+	</label>
+</div>
+      </div>
+      <button
+	class="button"
+	
+	type="button"
+	>Copy</button>
+    </div>
+    <div class="l-sharepane-x-preview wrap wrap-light4 wrap-rounded">
+      <p class="text text-small"><strong>We Support Open Badges v2.0!</strong></p>
+      <p class="text text-small">Badgr is testing the new version of Open Badges, v2.0. Badges accessed or downloaded in v2.0 format may not yet be accepted everywhere Open Badges are used.</p>
+    </div>
+    <div class="l-childrenhorizontal l-childrenhorizontal l-childrenhorizontal-right">
+      <a class="standaloneanchor" href="#">Open in New Window</a>
+    </div>
+  </div>
+</dialog>
+
+<script>
+
+  var dialog = document.querySelector('dialog');
+  var body = document.querySelector('body');
+
+  dialogPolyfill.registerDialog(dialog);
+
+  dialog.showModal();
+  dialog.classList.add('dialog-is-visible');
+  body.classList.add('l-dialogopen');
+
+</script>
+        </main>
+
+        <footer class="wrap l-containerhorizontal">
+          <div class="footer">
+	<ul>
+		<li>Copyright &copy; 2016 <a href="http://concentricsky.com" target="_blank">Concentric Sky, Inc.</a></li>
+		<li>Powered by <a href="" target="_blank">Badgr</a></li>
+	</ul>
+	<a href="" target="_blank">API documentation</a>
+</div>
+        </footer>
+
+        <nav class="menu" id="menu">
+
+	<h1 class="visuallyhidden">Main Navigation</h1>
+
+	<ul>
+			<li class="menuitem menuitem-is-active"><a href="#">Backpack</a></li>
+			<li class="menuitem"><a href="#">Collections</a></li>
+			<li class="menuitem"><a href="#">Issuers</a></li>
+		<li class="menuitem">
+			<button onclick="this.parentElement.classList.toggle('menuitem-is-open')">Account</button>
+			<ul>
+					<li class="menuitem menuitem-secondary"><a href="#">Profile</a></li>
+					<li class="menuitem menuitem-secondary"><a href="#">App Integrations</a></li>
+					<li class="menuitem menuitem-secondary"><a href="#">Sign Out</a></li>
+			</ul>
+		</li>
+	</ul>
+
+</nav>
+
+      </app>
+
+      <script type="text/javascript">
+  var event = new CustomEvent(
+    'styleguide:onRendered', {
+      bubbles: true,
+      cancelable: true
+    }
+  );
+
+  window.dispatchEvent(event);
+</script>
+
+    </body>
+
+</html>

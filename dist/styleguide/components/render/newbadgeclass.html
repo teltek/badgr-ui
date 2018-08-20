@@ -1,0 +1,170 @@
+
+
+<header class="wrap wrap-light l-containerhorizontal l-heading ">
+
+	<nav>
+		<h2 class="visuallyhidden">Breadcrumbs</h2>
+		<ul class="breadcrumb">
+	<li><a href="">Top Level</a></li>
+	<li><a href="">Child Level</a></li>
+	<li><a href="" class="breadcrumb-x-current">Child Level</a></li>
+</ul>
+	</nav>
+
+	<header class="heading">
+	<div class="heading-x-text">
+		<h1 id="heading" id="heading-addbadgeclass">Add Badge Class</h1>		
+	</div></header>
+
+</header>
+
+<form class="l-containerhorizontal l-containervertical">
+		<div class="l-formsection wrap wrap-well" role="group" aria-labelledby="heading-basicinformation">
+  <h3 class="l-formsection-x-legend title title-ruled" id="heading-basicinformation">Basic Information</h3>
+  <div class="l-formsection-x-container">
+      <div class="l-formsection-x-help">
+        <h4 class="title title-bordered" id="heading-badgebasics">Badge Basics</h4>
+        <p class="text text-small">Badge images can be either PNGs or SVGs. <strong>All fields are required.</strong></p>
+        <button
+	class="button button-tertiaryghost"
+	
+	type="button"
+	aria-labelledby="heading-badgebasics">Learn More</button>
+      </div>
+    <div class="l-formsection-x-inputs">
+        <div class="l-formimageupload">
+  <div class="l-formimageupload-x-upload formfield formfield-inlinelabel">
+  <label class=" " for="formfield">Image<span>(<button type="button">generate random<span class="visuallyhidden"> badge image</span></button>)</span></label>
+    <div class="l-dropzoneinput">
+  <div class="l-dropzoneinput-x-container">
+    <input class="visuallyhidden" type="file" name="dropzone" id="dropzone">
+    <label class="dropzone dropzone-alt1"  aria-labelledby="dropzone">
+    <span class="dropzone-x-text">Upload Image</span>
+</label>
+    <label
+	class="button button-tertiary"
+	
+	
+	aria-labelledby="dropzone">Browse</label>
+  </div>
+</div>
+</div>
+  <div class="l-formimageupload-x-inputs">
+    <div class="formfield">
+  <label class=" " for="badgename">Name</label>
+    <input id="badgename" name="badgename" type="text"    >
+</div>
+    <div class="formfield">
+  <label class=" " for="badgedescription">Short Description</label>
+		<textarea id="badgedescription" name="badgedescription"  ></textarea>
+</div>
+  </div>
+</div>
+    </div>
+  </div>
+  
+</div>
+		<div class="l-formsection wrap wrap-well" role="group" aria-labelledby="heading-criteria">
+  <h3 class="l-formsection-x-legend title title-ruled" id="heading-criteria">Criteria</h3>
+  <div class="l-formsection-x-container">
+      <div class="l-formsection-x-help">
+        <h4 class="title title-bordered" id="heading-whatscriteria">What's Criteria?</h4>
+        <p class="text text-small">Critera describes exactly what must be done to earn this badge. Some issuers choose a URL on their website as a promotional page that explains this badge opportunity and how to earn it. <strong>At least one field is required.</strong></p>
+        <button
+	class="button button-tertiaryghost"
+	
+	type="button"
+	aria-labelledby="heading-whatscriteria">Learn More</button>
+      </div>
+    <div class="l-formsection-x-inputs">
+        <div class="l-formsection-x-inputoffset markdowneditor">
+		<div class="markdowneditor-x-editor">
+			<div class="formfield">
+  <label class=" " for="markdowntext">How is this Badge Earned?</label>
+		<textarea id="markdowntext" name="markdowntext"  ></textarea>
+</div>
+		</div>
+		<div class="markdowneditor-x-tabbar">
+			<div class="markdowneditor-x-tab markdowneditor-x-writebutton">write</div>
+			<div class="markdowneditor-x-tab markdowneditor-x-previewbutton">preview</div>
+			<span><button class="trigger">Markdown Supported</button></span>
+		</div>
+</div>
+
+
+<!-- NOTE: THe following javascript is for styleguide functionality only.-->
+<script type="text/javascript">
+	if(!document.querySelector(".markdowneditor")
+			.classList.contains("markdowneditor-x-preview")
+	){
+		document.querySelector(".tooltip")
+			.classList.add("tooltip-is-active")
+	}
+</script>
+
+
+<!-- NOTE: THe following javascript is for styleguide functionality only. -->
+<script type="text/javascript">
+	var isOpen = false;
+	var markdowneditorContainer = document.getElementsByClassName("markdowneditor")[0];
+	var btn = markdowneditorContainer.getElementsByClassName("trigger")[0];
+
+	close();
+
+	btn.addEventListener("click",function(){
+		isOpen = !isOpen;
+		toggleOpen();
+	})
+
+	function toggleOpen(){
+		isOpen ?  open() : close();
+	}
+
+	function open(){
+		markdowneditorContainer.getElementsByClassName("tooltip")[0]
+			.classList.add("tooltip-is-active");
+	}
+
+	function close(){
+		markdowneditorContainer.getElementsByClassName("tooltip")[0]
+			.classList.remove("tooltip-is-active");
+	}
+</script>
+        <div class="formfield">
+  <label class=" " for="criteria-url">URL to the Badge Criteria Page</label>
+    <input id="criteria-url" name="criteria-url" type="text"    >
+</div>
+    </div>
+  </div>
+  
+</div>
+		<div class="l-formsection l-formsection-span wrap wrap-well" role="group" aria-labelledby="heading-addoptionaldetails">
+  <h3 class="l-formsection-x-legend title title-ruled title-ruledadd" id="heading-addoptionaldetails">Add Optional Details</h3>
+  <div class="l-formsection-x-container">
+    <div class="l-formsection-x-inputs">
+        <div class="l-squareiconcards">
+    <button class="squareiconcard squareiconcard-alignment" type="button" >
+  <span class="squareiconcard-x-container">Alignment</span>
+</button>
+    <button class="squareiconcard squareiconcard-tags" type="button" >
+  <span class="squareiconcard-x-container">Tags</span>
+</button>
+</div>
+    </div>
+  </div>
+  
+</div>
+	<hr class="rule l-rule">
+	<div class="l-childrenhorizontal l-childrenhorizontal l-childrenhorizontal-right">
+		<button
+	class="button button-secondary"
+	
+	type="button"
+	>Cancel</button>
+		<button
+	class="button"
+	
+	type="submit"
+	>Create Badge</button>
+	</div>
+</form>

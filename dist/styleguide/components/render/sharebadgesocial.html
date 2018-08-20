@@ -1,0 +1,39 @@
+
+
+<dialog class="dialog dialog-titled wrap wrap-light">
+  <header class="dialog-x-titlebar">
+		<h1>Share this Badge</h1>
+		<button class="dialog-x-close"><span class="icon icon-notext icon-close">Close</span></button>
+	</header>
+	<nav class="l-tabs" aria-labelledby="nav-tabs" role="navigation">
+  <h3 class="visuallyhidden" id="nav-tabs"> Tabs</h3>
+    <button class="tab" type="button" >
+  <span class="visuallyhidden">Open </span>Link<span class="visuallyhidden"> tab</span>
+</button>
+    <button class="tab tab-is-active" type="button" >
+  <span class="visuallyhidden">Open </span>Social<span class="visuallyhidden"> tab</span>
+</button>
+    <button class="tab" type="button" >
+  <span class="visuallyhidden">Open </span>Embed<span class="visuallyhidden"> tab</span>
+</button>
+</nav>
+  <div class="l-sharepane l-sharepane-social" tabindex="-1" id="sharelinksocial">
+    <div class="l-authbuttons">
+  <div><button class="buttonauth buttonauth-facebook" type="button">Facebook</button></div>
+  <div><button class="buttonauth buttonauth-linkedin_oauth2" type="button">LinkedIn</button></div>
+  <div><button class="buttonauth buttonauth-twitter" type="button">Twitter</button></div>
+</div>
+  </div>
+</dialog>
+<script>
+
+  var dialog = document.querySelector('dialog');
+  var body = document.querySelector('body');
+
+  dialogPolyfill.registerDialog(dialog);
+
+  dialog.showModal();
+  dialog.classList.add('dialog-is-visible');
+  body.classList.add('l-dialogopen');
+
+</script>

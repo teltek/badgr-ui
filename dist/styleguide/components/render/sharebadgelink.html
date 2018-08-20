@@ -1,0 +1,69 @@
+
+
+<dialog class="dialog dialog-titled wrap wrap-light">
+  <header class="dialog-x-titlebar">
+		<h1>Share this Badge</h1>
+		<button class="dialog-x-close"><span class="icon icon-notext icon-close">Close</span></button>
+	</header>
+	<nav class="l-tabs" aria-labelledby="nav-tabs" role="navigation">
+  <h3 class="visuallyhidden" id="nav-tabs"> Tabs</h3>
+    <button class="tab tab-is-active" type="button" >
+  <span class="visuallyhidden">Open </span>Link<span class="visuallyhidden"> tab</span>
+</button>
+    <button class="tab" type="button" >
+  <span class="visuallyhidden">Open </span>Social<span class="visuallyhidden"> tab</span>
+</button>
+    <button class="tab" type="button" >
+  <span class="visuallyhidden">Open </span>Embed<span class="visuallyhidden"> tab</span>
+</button>
+</nav>
+  <div class="l-sharepane" tabindex="-1" id="sharelink">
+    <div class="formfield formfield-link">
+  <label class=" " for="copy">Copy this private URL to share:</label>
+    <input id="copy" name="copy" type="text"   value="https://api.badgr.io" readonly>
+</div>
+    <div class="l-childrenhorizontal l-childrenhorizontal l-childrenhorizontal-spacebetween">
+      <div class="l-childrenhorizontal l-childrenhorizontal l-childrenhorizontal-small">
+        <div class="formradiobutton">
+	<input type="radio" value="version1" name="version" id="version1" checked >
+	<label for="version1">
+		<span><span></span></span>
+		<span class="formradiobutton-x-text">v1.0</span>
+	</label>
+</div>
+        <div class="formradiobutton">
+	<input type="radio" value="version2" name="version" id="version2"  >
+	<label for="version2">
+		<span><span></span></span>
+		<span class="formradiobutton-x-text">v2.0</span>
+	</label>
+</div>
+      </div>
+      <button
+	class="button"
+	
+	type="button"
+	>Copy</button>
+    </div>
+    <div class="l-sharepane-x-preview wrap wrap-light4 wrap-rounded">
+      <p class="text text-small"><strong>We Support Open Badges v2.0!</strong></p>
+      <p class="text text-small">Badgr is testing the new version of Open Badges, v2.0. Badges accessed or downloaded in v2.0 format may not yet be accepted everywhere Open Badges are used.</p>
+    </div>
+    <div class="l-childrenhorizontal l-childrenhorizontal l-childrenhorizontal-right">
+      <a class="standaloneanchor" href="#">Open in New Window</a>
+    </div>
+  </div>
+</dialog>
+
+<script>
+
+  var dialog = document.querySelector('dialog');
+  var body = document.querySelector('body');
+
+  dialogPolyfill.registerDialog(dialog);
+
+  dialog.showModal();
+  dialog.classList.add('dialog-is-visible');
+  body.classList.add('l-dialogopen');
+
+</script>

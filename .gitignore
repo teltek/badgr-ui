@@ -3,7 +3,7 @@
 node_modules/
 typings/
 test-report/
-dist/
+dist/*
 !dist/.gitkeep
 src/**/*.js
 src/**/*.js.map

@@ -102,7 +102,7 @@ import { BadgeClass } from "./models/badgeclass.model";
 					<div class="l-formsection-x-inputs">
 						<p
 							[hidden]="!alignmentFieldDirty || !badgeClassForm.hasError('criteriaRequired')"
-							class="text text-is-error">Either text or URL is required.</p>
+							class="text text-is-error">Criteria URL is required.</p>
 						
 						<bg-formfield-markdown
 							[control]="badgeClassForm.controls.badge_criteria_text"
@@ -518,7 +518,7 @@ export class BadgeClassEditFormComponent extends BaseAuthenticatedRoutableCompon
 	criteriaRequired(formGroup: FormGroup): {[id: string]: boolean} | null {
 		const controls: BasicBadgeForm<FormControl, FormArray> = formGroup.controls as any;
 
-		return ((controls.badge_criteria_url.value||"").trim().length || (controls.badge_criteria_text.value||"").trim().length)
+		return ((controls.badge_criteria_url.value||"").trim().length)
 			? null
 			: { 'criteriaRequired' : true };
 	}

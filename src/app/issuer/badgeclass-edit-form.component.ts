@@ -113,7 +113,7 @@ import { BadgeClass } from "./models/badgeclass.model";
 
 						<bg-formfield-text
 							[control]="badgeClassForm.controls.badge_criteria_url"
-							label="URL"
+							label="URL (format: https://OPEN_EDX_LMS_URI/courses/COURSE_ID/about)"
 							[urlField]="true"
 							errorMessage="URL to the Badge Criteria Page"
 						></bg-formfield-text>
